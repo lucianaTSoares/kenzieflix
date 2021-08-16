@@ -1,0 +1,198 @@
+/* ESTILOS GERAIS - RESET (TODOS SERÃO IGUAIS)*/
+body,figure,img,div,header,nav,main,ul,li,a,p,section,article,h1,h2,footer{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ESCONDER AS FIGCAPTIONS*/
+figcaption{
+    display: none;
+}
+
+/* LARGURA MÁXIMA DAS IMAGENS*/
+img{
+    max-width: 1200px;
+}
+
+/*CONEÚDO DA PÁGINA*/
+body{
+    background-color: #131313;
+}
+
+/* ESTILO DO CABEÇALHO*/
+.cabecalho{
+    padding: 14px 0px;
+}
+
+/*ESTILO DO LOGO*/
+.cabecalho .cabecalho__logo{
+    text-align: center;
+}
+.cabecalho .cabecalho__logo img{}
+
+/*ESTILO DO MENU*/
+.cabecalho .cabecalho__menuGeral{}
+.cabecalho .cabecalho__menuGeral ul{}
+.cabecalho .cabecalho__menuGeral li{}
+.cabecalho .cabecalho__menuGeral a{}
+
+/*ESTILO ÁREA DE CONFIGURAÇÃO */
+.cabecalho .cabecalho__menuConfiguracao{}
+.cabecalho .cabecalho__menuConfiguracao ul{}
+.cabecalho .cabecalho__menuConfiguracao li{}
+.cabecalho .cabecalho__menuConfiguracao a{}
+
+/*ESTILO DO MENU E ÁREA DE CONFIGURAÇÃO*/
+.cabecalho .cabecalho__menuGeral, .cabecalho .cabecalho__menuConfiguracao{
+    display: none;
+}
+
+/*ESTILO CONTEÚDO PRINCIPAL */
+main{}
+
+/*ESTILO SEÇÃO DESTAQUE */
+.secaoDestaque{
+    background-image: url(../img/destaque.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 206px 21px 41px;
+    /*35 21 19*/
+}
+
+.secaoDestaque .secaoDestaque__imagemDestaque{
+    display: none;
+}
+.secaoDestaque .secaoDestaque__imagemDestaque img{
+    width: 100%;
+}
+
+
+.secaoDestaque .secaoDestaque__descricaoDestaque{
+    color: #dfdfdf;
+}
+.secaoDestaque .secaoDestaque__descricaoDestaque h1{}
+.secaoDestaque .secaoDestaque__descricaoDestaque h1 img{
+    width: 100%;
+    max-width: 188px;
+}
+.secaoDestaque .secaoDestaque__descricaoDestaque p{
+    margin: 6px 0px 14px;
+    font-size: 0.81rem;
+}
+
+.secaoDestaque .secaoDestaque__linksDestaque{}
+.secaoDestaque .secaoDestaque__linksDestaque a{
+    font-size: 0.83rem;
+    background-color: #dfdfdf;
+    color: black;
+    padding: 7px 17px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+/*ESTILO SEÇÃO FIMLES */
+.secaoFilmes{
+    color: #dfdfdf;
+    padding: 0px 21px;
+    overflow-x: hidden; 
+    margin-bottom: 22px;
+}
+
+.secaoFilmes h2{
+    font-size: 0.96rem;
+}
+
+.secaoFilmes .secaoFilmes__listaFilmes{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    margin-top: 5px;
+}
+
+.secaoFilmes .secaoFilmes__listaFilmes li{
+    margin-right: 9px;
+}
+.secaoFilmes .secaoFilmes__listaFilmes li figure{}
+.secaoFilmes .secaoFilmes__listaFilmes li img{
+    border-radius: 4px;
+    width: 230px;
+}
+
+/*ESTILO RODAPÉ */
+.rodape{
+    padding: 0px 21px;
+    margin-top: 76px;
+    font-size: 0.8rem;
+}
+
+.rodape .rodape__midiasSociais{}
+
+.rodape .rodape__midiasSociais ul{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.rodape .rodape__midiasSociais ul li{
+    margin-right: 25px;
+}
+.rodape .rodape__midiasSociais ul a{}
+.rodape .rodape__midiasSociais ul img{}
+
+.rodape .rodape__navegacaoInfo{
+    margin: 11px 0px;
+}
+.rodape .rodape__navegacaoInfo ul{
+    
+}
+.rodape .rodape__navegacaoInfo ul li{
+    margin-block: 16px;
+}
+.rodape .rodape__navegacaoInfo ul li a{}
+
+.rodape .rodape__linkCodigo{
+    border: 1px solid grey;
+    border-radius: 3px;
+    padding: 6px 7px;
+    display: inline-block;
+    margin: 17px 0px 22px 0px;
+}
+    
+.rodape p{
+    font-size: 0.68rem;
+    margin-bottom: 17px;
+}
+
+.rodape, .rodape .rodape__navegacaoInfo ul li a, .rodape .rodape__linkCodigo{
+    color: grey;
+}
+
+/*RESPONSIVIDADE*/
+@media screen and (min-width: 443px) {
+    .secaoDestaque .secaoDestaque__descricaoDestaque h1 img {
+        max-width: 240px;
+    }
+}
+
+@media screen and (min-width: 578px) {
+
+    .secaoDestaque .secaoDestaque__descricaoDestaque {
+        max-width: 470px;
+    }
+
+    .secaoDestaque .secaoDestaque__descricaoDestaque h1 img {
+        max-width: 305px;
+    }
+
+    .rodape .rodape__navegacaoInfo {
+    margin: 11px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+}
