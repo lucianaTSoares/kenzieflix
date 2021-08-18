@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="C:\Users\Lucy\Documents\VSCode Projetos\kenzieflix\assets\css\style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>KenzieFlix</title>
 
 </head>
@@ -21,44 +21,68 @@
     <!--Cabeçalho do site, usa-se a tag HEADER-->
     <header class="cabecalho">
 
-        <!--Indica que existe uma figura na página para o navegador-->
-        <figure class="cabecalho__logo">
+        <div class="container">
+            <!--Indica que existe uma figura na página para o navegador-->
+            <figure class="cabecalho__logo">
 
-            <!--Imagem da Logo-->
-            <img src="../kenzieflix/assets/img/logo.png" alt="logo">
+                <!--Imagem da Logo-->
+                <img src="./assets/img/logo.png" alt="logo">
 
-            <!--Referência para a figura-->
-            <figcaption>Logo KenzieFlix</figcaption>
- 
-        </figure>
+                <!--Referência para a figura-->
+                <figcaption>Logo KenzieFlix</figcaption>
+    
+            </figure>
 
-        <!--Tag de navegação-->
-        <nav class="cabecalho__menuGeral">
+            <figure class="cabecalho__logo--logoPequeno">
 
-            <!--Lista de links-->
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Séries</a></li>
-                <li><a href="#">Em alta</a></li>
-                <li><a href="#">Filmes</a></li>
-                <li><a href="#">Minha lista</a></li>
-                <li><a href="#">Assista de novo</a></li>
-            </ul>
+                <!--Imagem da Logo-->
+                <img src="./assets/img/logoP.png" alt="logo">
 
-        </nav>
+                <!--Referência para a figura-->
+                <figcaption>Logo KenzieFlix</figcaption>
+    
+            </figure>
 
-        <!--Tag divisão (elementos laterais direito da Kenzieflix)-->
-        <div class="cabecalho__menuConfiguracao">
+            <!--Tag de navegação-->
+            <nav class="cabecalho__menuGeral">
 
-            <!--Lista do menu lateral direito-->
-            <ul>
-                <li><a href="#">Busca</a></li>
-                <li><a href="#">Infantil</a></li>
-                <li><a href="#">Presente</a></li>
-                <li><a href="#">Notificação</a></li>
-                <li><a href="#">Usuário</a></li>
-            </ul>
+                <!--Lista de links-->
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Séries</a></li>
+                    <li><a href="#">Em alta</a></li>
+                    <li><a href="#">Filmes</a></li>
+                    <li><a href="#">Minha lista</a></li>
+                    <li><a href="#">Assista de novo</a></li>
+                </ul>
 
+            </nav>
+
+            <!--Tag divisão (elementos laterais direito da Kenzieflix)-->
+            <div class="cabecalho__menuConfiguracao">
+
+                <!--Lista do menu lateral direito-->
+                <ul>
+
+                    <li>
+                        <a href="#"><img src="./assets/img/pesquisa.png" alt="Pesquisa"></a>
+                    </li>
+                    
+                    <li>
+                        <a href="#"><img src="./assets/img/presente.png" alt="Presente"></a>
+                    </li>
+
+                    <li>
+                        <a href="#"><img src="./assets/img/notificacao.png" alt="Notificação"></a>
+                    </li>
+
+                    <li>
+                        <a href="#"><img src="./assets/img/perfil.png" alt="Perfil"></a>
+                    </li>
+
+                </ul>
+
+            </div>
         </div>
 
     </header>
@@ -69,101 +93,115 @@
         <!--Seção destaque-->
         <section class="secaoDestaque">
 
-            <!--Imagem destaque-->
-            <figure class="secaoDestaque__imagemDestaque">
+            <div class="container">
+                <!--Imagem destaque-->
+                <figure class="secaoDestaque__imagemDestaque">
 
-                <img src="../kenzieflix/assets/img/destaque.png" alt="Stranger Things">
-                <figcaptions>Série: Stranger Things</figcaption>
-            
-            </figure>
-
-            <!--Conteúdo destaque-->
-            <article class="secaoDestaque__descricaoDestaque">
+                    <img src="./assets/img/destaque.png" alt="Stranger Things">
+                    <figcaption>Série: Stranger Things</figcaption>
                 
-                <h1><img src="../kenzieflix/assets/img/titulo-destaque.png" alt="Título destaque"></h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                    Voluptate vel cum quas dolor ea nulla numquam deserunt adipisci omnis! 
-                    Omnis unde saepe culpa magni molestiae voluptas. Corporis, cupiditate! 
-                    Officia, dignissimos.</p>
+                </figure>
+
+                <!--Conteúdo destaque-->
+                <article class="secaoDestaque__descricaoDestaque">
+                    
+                    <h1><img src="./assets/img/titulo-destaque.png" alt="Título destaque"></h1>
+                    
+                    <ul>
+                        <li>Sinistro</li>
+                        <li> • </li>
+                        <li>Empolgante</li>
+                        <li> • </li>
+                        <li>Adolescente</li>
+                    </ul>
+
+                    <p>Quanddo um garoto desaparece, a cidade toda participa nas buscas. Mas o que encontram são 
+                        segredos, forças sobrenaturais e uma menina.</p>
+                
+                </article>
+
+                <!--Links Destaque-->
+                <div class="secaoDestaque__linksDestaque">
             
-            </article>
+                    <a href="#"><img src="./assets/img/assistir.png"><b>Assistir</b></a>
+                    <a href="#" class="secaoDestaque__linksDestaque--transparente"><img src="./assets/img/info.png"><b>Saiba mais</b></a>
 
-            <!--Links Destaque-->
-            <div class="secaoDestaque__linksDestaque">
-        
-                <a href="#"><b>Assistir</b></a>
-                <a href="#" id=><b>Saiba mais</b></a>
-
+                </div>
             </div>
-            
         
         </section>
 
         <!--Seção filmes em alta-->
         <section class="secaoFilmes">
 
-            <h2>Em alta</h2>
+            <div class="container">
+                <h2>Em alta</h2>
 
-            <!--Lista filmes em alta-->
-            <ul class="secaoFilmes__listaFilmes">
-                <li>
-                    <figure>
-                        <img src="../kenzieflix/assets/img/filme1.png" alt="Filme1">
-                    </figure>
-                </li>
+                <!--Lista filmes em alta-->
+                <ul class="secaoFilmes__listaFilmes">
+                    <li>
+                        <figure>
+                            <img src="./assets/img/filme1.png" alt="Filme1">
+                        </figure>
+                    </li>
 
-                <li>
-                    <figure>
-                        <img src="../kenzieflix/assets/img/filme2.png" alt="Filme2">
-                    </figure>
-                </li>
+                    <li>
+                        <figure>
+                            <img src="./assets/img/filme2.png" alt="Filme2">
+                        </figure>
+                    </li>
 
-                <li>
-                    <figure>
-                        <img src="../kenzieflix/assets/img/filme3.png" alt="Filme3">
-                    </figure>
-                </li>
+                    <li>
+                        <figure>
+                            <img src="./assets/img/filme3.png" alt="Filme3">
+                        </figure>
+                    </li>
 
-                <li>
-                    <figure>
-                        <img src="../kenzieflix/assets/img/filme4.png" alt="Filme4">
-                    </figure>
-                </li>
-            </ul>
+                    <li>
+                        <figure>
+                            <img src="./assets/img/filme4.png" alt="Filme4">
+                        </figure>
+                    </li>
+                </ul>
+            </div>
 
         </section>
 
         <!--Seção continuar assistindo-->
         <section class="secaoFilmes secaoFilmes--progressoFilmes">
 
-            <h2>Em alta</h2>
+            <div class="container">
+                
+                <h2>Em alta</h2>
 
-            <!--Lista filmes em alta-->
-            <ul class="secaoFilmes__listaFilmes">
-                <li>
-                    <figure>
-                        <img src="../kenzieflix/assets/img/filme1.png" alt="Filme1">
-                    </figure>
-                </li>
+                <!--Lista filmes em alta-->
+                <ul class="secaoFilmes__listaFilmes">
+                    <li>
+                        <figure>
+                            <img src="./assets/img/filme1.png" alt="Filme1">
+                        </figure>
+                    </li>
 
-                <li>
-                    <figure>
-                        <img src="../kenzieflix/assets/img/filme2.png" alt="Filme2">
-                    </figure>
-                </li>
+                    <li>
+                        <figure>
+                            <img src="./assets/img/filme2.png" alt="Filme2">
+                        </figure>
+                    </li>
 
-                <li>
-                    <figure>
-                        <img src="../kenzieflix/assets/img/filme3.png" alt="Filme3">
-                    </figure>
-                </li>
+                    <li>
+                        <figure>
+                            <img src="./assets/img/filme3.png" alt="Filme3">
+                        </figure>
+                    </li>
 
-                <li>
-                    <figure>
-                        <img src="../kenzieflix/assets/img/filme4.png" alt="Filme4">
-                    </figure>
-                </li>
-            </ul>
+                    <li>
+                        <figure>
+                            <img src="./assets/img/filme4.png" alt="Filme4">
+                        </figure>
+                    </li>
+                </ul>
+
+            </div>
 
         </section>
 
@@ -172,56 +210,60 @@
     <!--Rodapé da página-->
     <footer class="rodape">
 
-        <!--Lista de mídias sociais-->
-        <div class="rodape__midiasSociais">
-            <ul>
-                <li>
-                    <a href="#">
-                        <img src="../kenzieflix/assets/img/fb.png" alt="Facebook">
-                    </a>
-                </li>
+        <div class="container">
 
-                <li>
-                    <a href="#">
-                        <img src="../kenzieflix/assets/img/ig.png" alt="Instagram">
-                    </a>
-                </li>
+            <!--Lista de mídias sociais-->
+            <div class="rodape__midiasSociais">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./assets/img/fb.png" alt="Facebook">
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="#">
-                        <img src="../kenzieflix/assets/img/tt.png" alt="Twitter">
-                    </a>
-                </li>
+                    <li>
+                        <a href="#">
+                            <img src="./assets/img/ig.png" alt="Instagram">
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="#">
-                        <img src="../kenzieflix/assets/img/yt.png" alt="YouTube">
-                    </a>
-                </li>
-            </ul>
+                    <li>
+                        <a href="#">
+                            <img src="./assets/img/tt.png" alt="Twitter">
+                        </a>
+                    </li>
 
-        </div>
+                    <li>
+                        <a href="#">
+                            <img src="./assets/img/yt.png" alt="YouTube">
+                        </a>
+                    </li>
+                </ul>
 
-        <!--Lista de informaçoes-->
-        <nav class="rodape__navegacaoInfo">
-            <ul>
-                <li><a href="#">Idioma e legendas</a></li>
-                <li><a href="#">Imprensa</a></li>
-                <li><a href="#">Privacidade</a></li>
-                <li><a href="#">Entre em contato</a></li>
-            </ul>
+            </div>
 
-            <ul>    
-                <li><a href="#">Audiodescrição</a></li>
-                <li><a href="#">Relações com investidores</a></li>
-                <li><a href="#">Avisos legais</a></li>
-            </ul>
-        </nav>
+            <!--Lista de informaçoes-->
+            <nav class="rodape__navegacaoInfo">
+                <ul>
+                    <li><a href="#">Idioma e legendas</a></li>
+                    <li><a href="#">Imprensa</a></li>
+                    <li><a href="#">Privacidade</a></li>
+                    <li><a href="#">Entre em contato</a></li>
+                </ul>
 
-        <!--Botão mais serviço e copyright-->
-        <a href="#" class="rodape__linkCodigo">Código do serviço</a>
-        <p>Feito com ♥ por Luciana Soares</p>
+                <ul>    
+                    <li><a href="#">Audiodescrição</a></li>
+                    <li><a href="#">Relações com investidores</a></li>
+                    <li><a href="#">Avisos legais</a></li>
+                </ul>
+            </nav>
+
+            <!--Botão mais serviço e copyright-->
+            <a href="#" class="rodape__linkCodigo">Código do serviço</a>
+            <p>Feito com ♥ por Luciana Soares</p>
     
+        </div>    
+
     </footer>
 </body>
 
