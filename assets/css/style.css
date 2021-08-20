@@ -1,4 +1,4 @@
-/* ESTILOS GERAIS - RESET (TODOS SERÃO IGUAIS)*/
+/* Reset */
 body,figure,img,div,header,nav,main,ul,li,a,p,section,article,h1,h2,footer{
     padding: 0;
     margin: 0;
@@ -9,28 +9,37 @@ body,figure,img,div,header,nav,main,ul,li,a,p,section,article,h1,h2,footer{
     font-family: 'Roboto', sans-serif;
 }
 
-/* ESCONDER AS FIGCAPTIONS*/
+
+/* Esconder figcaption */
 figcaption{
     display: none;
 }
 
-/* LARGURA MÁXIMA DAS IMAGENS*/
+
+/* Largura max das imagens */
 img{
     max-width: 1280px;
 }
 
-/*CONEÚDO DA PÁGINA*/
+
+/*Corpo da página - Uma cor para a página toda*/
 body{
     background-color: #020000;
 }
 
-/* BARRA DE ROLAGEM */
+
+/* Estilização da barra de rolagem */
+*{
+    scrollbar-width: thin;
+    scrollbar-color: #dfdfdf #02000000;
+}
+
 *::-webkit-scrollbar {
     width: 9px;
 }
 
 *::-webkit-scrollbar-track {
-    background: #706e6e00;
+    background: #02000000;
     border-radius: 20px;
 }
 
@@ -39,21 +48,29 @@ body{
     border-radius: 20px;
 }
 
+*::-webkit-scrollbar-corner{
+    display: hidden;
+}
+
+
+/* Container para ajustar a página */
 .container{
     max-width: 3840px;
     margin: 0 auto;
 }
 
-/* ESTILO DO CABEÇALHO*/
+
+/* Estilo do cabeçalho*/
 .cabecalho{
     padding: 11px 0px;
 }
  .cabecalho .container{
     display: flex;
     justify-content: space-between;
- }
+}
 
-/*ESTILO DO LOGO*/
+
+/* Estilo das logos (pequeno/grande) */
 .cabecalho .cabecalho__logo{
     padding: 0px 21px;
 }
@@ -68,9 +85,8 @@ body{
     margin-left: -6px;
 }
 
-/*ESTILO DO MENU*/
 
-
+/* Estilo do menu */
 .cabecalho .cabecalho__menuGeral ul{
     margin-left: 20px;
 }
@@ -86,12 +102,11 @@ body{
     font-size: 0.85rem;
 }
 
-/*ESTILO ÁREA DE CONFIGURAÇÃO */
+
+/* Estilo do menu de navegação */
 .cabecalho .cabecalho__menuConfiguracao{
     padding-right: 30px;
 }
-
-.cabecalho .cabecalho__menuConfiguracao ul{}
 
 .cabecalho .cabecalho__menuConfiguracao li{
     display: inline-block;
@@ -106,15 +121,17 @@ body{
 .cabecalho, .cabecalho .cabecalho__menuConfiguracao a{
     color: #dfdfdf;
 }
-/*ESTILO DO MENU E ÁREA DE CONFIGURAÇÃO*/
+
+
+/* Estilo do menu lateral direito */
 .cabecalho .cabecalho__menuGeral{
     display: none;
 }
 
-/*ESTILO CONTEÚDO PRINCIPAL */
-main{}
 
-/*ESTILO SEÇÃO DESTAQUE */
+/* Estilização do conteúdo principal */
+
+/* Estilo da seção destaque */
 .secaoDestaque{
     background-image: url(../img/destaque.png);
     background-size: cover;
@@ -122,10 +139,6 @@ main{}
     background-position: center;
     padding: 268px 30px 44px;
     width: 100.5%;
-}
-
-.secaoDestaque .container{
-
 }
 
 .secaoDestaque .secaoDestaque__imagemDestaque{
@@ -206,10 +219,11 @@ main{}
     color: #dfdfdf;
 }
 
-/*ESTILO SEÇÃO FIMLES */
+
+/* Estido da seção filmes */
 .secaoFilmes{
     color: #dfdfdf;
-    overflow-x: hidden;
+    overflow-x: scroll;
     margin-bottom: 32px;
     padding-left: 30px;
     transform: translateY(-15px);
@@ -222,7 +236,6 @@ main{}
 .secaoFilmes .secaoFilmes__listaFilmes{
     display: flex;
     flex-wrap: nowrap;
-    overflow-y: hidden;
     overflow-x: scroll;
     margin-top: 6px;
 }
@@ -230,24 +243,18 @@ main{}
 .secaoFilmes .secaoFilmes__listaFilmes li{
     margin-right: 5px;
 }
-.secaoFilmes .secaoFilmes__listaFilmes li figure{
-}
 
 .secaoFilmes .secaoFilmes__listaFilmes li img{
     border-radius: 4px;
-    
 }
 
-.secaoFilmes .secaoFilmes__listaFilmes img{}
 
-/*ESTILO RODAPÉ */
+/* Estilo do rodapé */
 .rodape{
     padding: 0px 30px;
-    margin-top: 76px;
+    margin-top: 40px;
     font-size: 0.8rem;
 }
-
-.rodape .rodape__midiasSociais{}
 
 .rodape .rodape__midiasSociais ul{
     display: flex;
@@ -256,19 +263,18 @@ main{}
 .rodape .rodape__midiasSociais ul li{
     margin-right: 25px;
 }
-.rodape .rodape__midiasSociais ul a{}
-.rodape .rodape__midiasSociais ul img{}
 
 .rodape .rodape__navegacaoInfo{
     margin: 11px 0px;
 }
-.rodape .rodape__navegacaoInfo ul{
-    
-}
+
 .rodape .rodape__navegacaoInfo ul li{
     margin-block: 16px;
 }
-.rodape .rodape__navegacaoInfo ul li a{}
+
+.rodape .rodape__navegacaoInfo a{
+    font-size: 0.8rem;
+}
 
 .rodape .rodape__linkCodigo{
     border: 1px solid grey;
@@ -279,7 +285,7 @@ main{}
 }
     
 .rodape p{
-    font-size: 0.68rem;
+    font-size: 0.7rem;
     margin-bottom: 17px;
 }
 
@@ -287,7 +293,8 @@ main{}
     color: grey;
 }
 
-/*RESPONSIVIDADE*/
+
+/* Responsividade */
 @media screen and (min-width: 425px){
     .secaoDestaque .secaoDestaque__descricaoDestaque h1 img{
         max-width: 240px;
@@ -401,6 +408,11 @@ main{}
 
     .secaoFilmes h2{
         font-size: 1rem;
+    }
+
+    .rodape .rodape__navegacaoInfo{
+        display: flex;
+        justify-content: space-between;
     }
 
 }
