@@ -24,6 +24,16 @@
 
 ---
 
+## 📷 Imagens da página web
+ 
+ <div align="center">
+ 
+  <p>Kenzieflix Desktop</p><img src="assets/prints/KenzieflixDesktop.png" alt="Desktop"><br><br>
+  <p>Kenzieflix Mobile</p><img src="assets/prints/KenzieflixMobile.jpg" alt="Mobile" height="800">
+  
+ </div>
+ 
+---
 ## 🎨 Layout base
 
 - [Kenzieflix Desktop](./assets/img/desktop.png)
