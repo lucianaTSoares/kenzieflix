@@ -9,8 +9,6 @@
 
 - [Visual Studio Code](https://code.visualstudio.com/)
 
----
-
 ## 💻 O Projeto
 
 ### Estrutura de arquivos
@@ -22,8 +20,6 @@
         - style.css
     - /img
 
----
-
 ## 📷 Imagens da página web
  
  <div align="center">
@@ -33,7 +29,6 @@
   
  </div>
  
----
 ## 🎨 Layout base
 
 - [Kenzieflix Desktop](./assets/img/desktop.png)
@@ -53,3 +48,20 @@
 - #dfdfdf5c
 - grey
 - black
+ 
+ ## Autora
+
+<a href="https://github.com/lucianaTSoares">
+    <img src="https://avatars.githubusercontent.com/u/88734065?v=4" width="100px" alt="github avatar"><br>
+    <sub>Luciana Thomaz Soares ✨</sub>
+</a>
+
+<br>Feito com ❤ por Luciana Soares
+
+<a href="https://www.linkedin.com/in/lucianatsoares/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+</a>
+  
+<a href="mailto:lucianat.s@hotmail.com" target="_blank">
+    <img src="https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" alt="Outlook">
+</a>
